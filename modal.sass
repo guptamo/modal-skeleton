@@ -1,10 +1,11 @@
 @import 'base'
 
 $goeast-red: rgb(187, 53, 53)
+$goeast-grey: rgb(53, 53, 53)
 
 .modal-overlay
     position: absolute
-    background: fade-out($goeast-red, 0.15)
+    background: fade-out(white, 0.15)
     top: 0
     left: 0
     right: 0
@@ -15,6 +16,20 @@ $goeast-red: rgb(187, 53, 53)
     opacity: 0
     transition: all 300ms ease-in-out
     pointer-events: none
+
+    .modal
+        box-sizing: border-box
+        padding: 10px
+        background: $goeast-red
+        width: 60%
+        max-width: 1000px
+        box-shadow: 3px 3px $goeast-grey
+
+
+        img.scheduler-logo
+            padding: 5px 0
+            width: 50%
+            max-width: 415px
 
     &.shown
         opacity: 1

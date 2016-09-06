@@ -3,7 +3,7 @@ $(function(){
         $('.modal-overlay').addClass('shown')
     })
 
-    $('button.modal-close').click(function(){
+    $('button.modal-close, .modal-overlay').click(function(){
         $('.modal-overlay').removeClass('shown')
     })
 })
